@@ -1,0 +1,5 @@
+<data>
+    <variable
+        name="tenant"
+        type="com.example.tenantmanagementsystemgroupa.Tenant" />
+</data>
