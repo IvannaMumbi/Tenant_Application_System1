@@ -1,11 +1,12 @@
-package com.example.tenantmanagementsystemgroupa
+package com.example.tenantapplicationsystem
 
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.tenantmanagementsystemgroupa.databinding.ActivityMainBinding
+import com.example.tenantapplicationsystem.databinding.ActivityMainBinding
+import com.example.tenantapplicationsystem.ui.Tenant
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

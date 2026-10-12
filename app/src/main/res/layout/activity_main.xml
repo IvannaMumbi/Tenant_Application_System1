@@ -43,6 +43,13 @@
             android:layout_marginTop="16dp"
             android:text="Save Tenant" />
 
+        <Button
+            android:id="@+id/callButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Call Tenant" />
+
         <TextView
             android:id="@+id/summaryTextView"
             android:layout_width="match_parent"
