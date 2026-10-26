@@ -1,18 +1,16 @@
 plugins {
     alias(libs.plugins.android.application)
-    id("androidx.navigation.safeargs.kotlin")   // Safe Args: must be below android.application
-    alias(libs.plugins.kotlin.android)
-    id("kotlin-kapt")                           // needed for Data Binding
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
-    namespace = "com.example.tenantmanagementsystemgroupa"   // use your own package name
-    compileSdk = 36                                          // keep whatever yours already has
+    namespace = "com.example.tenantmanagementsystemgroupa"
+    compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.example.tenantmanagementsystemgroupa"   // keep yours
-        minSdk = 24                                                  // keep yours
-        targetSdk = 36                                               // keep yours
+        applicationId = "com.example.tenantmanagementsystemgroupa"
+        minSdk = 24
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
@@ -34,10 +32,6 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
 
-    kotlinOptions {
-        jvmTarget = "11"
-    }
-
     buildFeatures {
         viewBinding = true
         dataBinding = true
@@ -52,7 +46,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)
+    implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.constraintlayout)
 
     testImplementation(libs.junit)
